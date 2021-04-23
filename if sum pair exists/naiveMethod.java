@@ -8,7 +8,7 @@ class Test {
 	
 	public static boolean ifSumPairExists(int[] arr, int X) {
 		int n=arr.length;
-		for(int i=0;i<n;i++) {
+		for(int i=0;i<n;i++) { // Check every pair
 			for(int j=i+1;j<n;j++) {
 				if(arr[i]+arr[j]==X) {
 					return true;
