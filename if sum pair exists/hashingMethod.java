@@ -9,12 +9,12 @@ class Test {
 	
 	public static boolean ifSumPairExists(int[] arr, int X) {
 		int n=arr.length;
-		HashSet<Integer> hset=new HashSet<Integer>();
+		HashSet<Integer> hset=new HashSet<Integer>();//Creating an object of hashset of type Integer
 		for(int i=0;i<n;i++) {
-			if(hset.contains(X-arr[i]))
+			if(hset.contains(X-arr[i]))//checking if pair exists
 				return true;
 			else
-				hset.add(arr[i]);
+				hset.add(arr[i]);// adding to hashset
 		}
 		return false;
 	}
